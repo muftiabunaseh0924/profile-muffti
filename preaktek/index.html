@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome CDN for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <title>Profil Web</title>
+  </head>
+  <body>
+    <!-- Animated cubes background ala CodePen, letakkan di paling atas dalam <body> -->
+    <div class="background">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+    </div>
+    <header class="header">
+      <h1 id="nama" class="animated-text">
+        Halo, nama saya Mufti Abu Naseh
+        <i class="fa-solid fa-hand-wave" style="color: #ffe066"></i>
+      </h1>
+    </header>
+    <section class="profile-section fade-in">
+      <div class="profile-img-container">
+        <img
+          src="/image/mufti.jpg"
+          alt="Foto Mufti"
+          width="200"
+          height="200"
+          class="profile-img profile-img-animate"
+        />
+      </div>
+      <!-- Section Keahlian dipindah ke sini -->
+      <section class="skills-section fade-in">
+        <h2 style="text-align: center; color: #fc415a; margin-bottom: 18px">
+          Keahlian
+        </h2>
+        <div class="skills-list">
+          <div class="skill-item html">
+            <i class="fab fa-html5"></i> HTML
+            <i class="fa-solid fa-code" style="color: #fc415a"></i>
+          </div>
+          <div class="skill-item css">
+            <i class="fab fa-css3-alt"></i> CSS
+            <i class="fa-solid fa-paint-brush" style="color: #2196f3"></i>
+          </div>
+          <div class="skill-item js">
+            <i class="fab fa-js-square"></i> JavaScript
+            <i class="fa-solid fa-bolt" style="color: #f7df1e"></i>
+          </div>
+          <div class="skill-item github">
+            <i class="fab fa-github"></i> GitHub
+            <i class="fa-solid fa-code-branch" style="color: #fff"></i>
+          </div>
+        </div>
+      </section>
+      <article class="profile-desc fade-in">
+        <h2><i class="fa-solid fa-user"></i> Tentang Saya</h2>
+        <p>
+          Nama saya Mufti Abu Naseh, lahir di Kota Malang pada tanggal 20
+          Januari 2004. Saya adalah anak pertama dari dua bersaudara dan tinggal
+          di Kota Malang. Saat ini saya bersekolah di SMK Negeri 1 Turen jurusan
+          Teknik Komputer dan Jaringan. Saya suka belajar hal baru dan berteman
+          dengan siapa saja.
+        </p>
+      </article>
+    </section>
+    <!-- Bagian Hobi: Tabel daftar hobi utama -->
+    <section class="hobi-section fade-in">
+      <h2><i class="fa-solid fa-heart"></i> Hobi</h2>
+      <table class="hobi-table table-animate">
+        <thead>
+          <tr>
+            <th style="text-align: center">Nama Hobi</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="text-align: center">
+              <i
+                class="fa-solid fa-book-open-reader"
+                style="color: #fc415a"
+              ></i>
+              Membaca Buku
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+              <i class="fa-solid fa-gamepad" style="color: #25f4ee"></i>
+              Bermain Game
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center">
+              <i class="fa-solid fa-futbol" style="color: #f7df1e"></i>
+              Bermain Bola
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <!-- Section Koneksi ke IG, WA, TikTok -->
+    <section class="connect-section fade-in">
+      <h2 style="text-align: center; color: #fc415a; margin-bottom: 18px">
+        Koneksi Saya
+      </h2>
+      <div
+        class="connect-links"
+        style="
+          display: flex;
+          justify-content: center;
+          gap: 24px;
+          flex-wrap: wrap;
+        "
+      >
+        <a
+          class="connect-btn ig"
+          href="https://www.instagram.com/mufti.an/"
+          target="_blank"
+          title="Instagram"
+        >
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a
+          class="connect-btn wa"
+          href="https://wa.me/6285770516601"
+          target="_blank"
+          title="WhatsApp"
+        >
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+        <a
+          class="connect-btn tiktok"
+          href="https://www.tiktok.com/@muftianunaseh1"
+          target="_blank"
+          title="TikTok"
+        >
+          <i class="fab fa-tiktok"></i> TikTok
+        </a>
+        <a
+          class="connect-btn email"
+          href="mailto:muftianunaseh0924@gmail.com"
+          target="_blank"
+          title="Email"
+        >
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+        <a
+          class="connect-btn github"
+          href="https://github.com/muftianunaseh"
+          target="_blank"
+          title="GitHub"
+        >
+          <i class="fab fa-github"></i> GitHub
+        </a>
+      </div>
+    </section>
+    <footer id="footer" class="footer fade-in">
+      <p>&copy; 2025 Mufti Abu Naseh</p>
+      <p>
+        <i class="fa-solid fa-location-dot"></i> Alamat: Jalan gallunggung no
+        228 blok j
+      </p>
+    </footer>
+    <!-- Animasi interaktif: fade-in dan slide-up untuk setiap section saat muncul di viewport -->
+    <script>
+      // Intersection Observer untuk animasi fade-in
+      document.addEventListener("DOMContentLoaded", function () {
+        const faders = document.querySelectorAll(".fade-in");
+        const options = {
+          threshold: 0.15,
+        };
+        const appearOnScroll = new IntersectionObserver(function (
+          entries,
+          observer
+        ) {
+          entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          });
+        },
+        options);
+        faders.forEach((fader) => {
+          appearOnScroll.observe(fader);
+        });
+      });
+    </script>
+    <!-- Akhir animasi interaktif -->
+  </body>
+</html>
